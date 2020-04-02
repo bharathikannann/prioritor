@@ -3,6 +3,7 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Priotitor</title>
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<link rel="stylesheet" type="text/css" href="styleindex.css">
 	<link rel="stylesheet" type="text/css" href="testconnect.html">
 	<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
@@ -10,7 +11,6 @@
 	<style type="text/css">
 		body {
 		font-family: 'Poppins', sans-serif;
-		display: flex;
 		background-color: 	rgb(255, 230, 230);
 		}
 
@@ -74,6 +74,9 @@
 		  color: white;
 		}
 
+		.welcomepadding{
+			padding:10px;
+		}
 		.button1 {
 		  background-color: #4CAF50; 
 		  color: white; 
@@ -91,8 +94,8 @@
 			background-color: #f44336;
 		}
 
-		.container{
-			padding: 50px;
+		.container1{
+			padding: 20px 50px 20px 50px;
 		}
 		span.psw{
 			float:right;
@@ -131,10 +134,10 @@
 	 <main>
 
 	 		
-	 		<div class="marginlayout container">
+	 		<div class="marginlayout container1">
 	 			<div class="rotate">
-	 				<div class="marginlayout font1"><h1 style="text-align:center"><b>Welcome to Prioritor</b></h1></div>
-	 				<div><h2><b>Registration Form</b></h2></div>
+	 				<div class="marginlayout font1 welcomepadding"><h1 style="text-align:center"><b>Welcome to Prioritor</b></h1></div>
+	 				<div><br><center><h2><b>Registration Form</b></h2></div></center>
 	 			    
 	 			</div>
 	 	<?php 
@@ -156,31 +159,32 @@
 	 	 
 	 	?>
 	 	<form action="includes/signup.inc.php" method="post">
-	 		<div class="container" style="background-color: white">
+	 		<div class="container1" style="background-color: white">
 	 						<label for="usname"><b>Username</b></label>
-	 						<input type="text" placeholder="Enter Username" name="uid" id="username">
+	 						<input type="text" placeholder="Enter Username" name="uid" id="username" class="form-control">
 
 	 						<label for="email"><b>Email Id</b></label>
-	 						<input type="email" placeholder="Enter EmailId" name="mail" id="emailid">
+	 						<input type="email" placeholder="Enter EmailId" name="mail" id="emailid" class="form-control">
 
 	 						<label for="psw"><b>Password</b></label>
-	 						<input type="password" placeholder="Enter Password" name="pwd" id="psinput">
+	 						<input type="password" placeholder="Enter Password" name="pwd" id="psinput" class="form-control">
 
 	 						<label for="psw"><b>Repeat Password</b></label>
-	 						<input type="password" placeholder="Enter Password" name="pwd-repeat" id="psinput">
+	 						<input type="password" placeholder="Enter Password" name="pwd-repeat" id="psinput" class="form-control">
 
 	 			            <script type="text/javascript" src="script.js"></script>
 	 						<input type="checkbox" onclick="showpasswordfunction()">Show Password<br>
 
 	 						
 	 					</div>
+	 					
 	 			    
-	 			    	<div class="container">
+	 			    	<div class="container1">
 	 						<button type="submit" class="button1" id="loginbutton" name="signup-submit" onclick="validate()">Sign Up</button>
 
-	 						<label>
-	 							<input type="checkbox" checked="checked" name="remember">Remember me
-	 						</label>
+	 						<div>
+	 							<big><center><small>Already Registered : </small><a href="headerloginpage.php" class="colora">Login </a></h2></center><h2></big>
+	 						</div>
 	 					</div>
 	 	</form>
 	 </div>

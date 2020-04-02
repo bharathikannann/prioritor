@@ -6,7 +6,8 @@ session_start();
 	 	<?php 
 	 	if(isset($_SESSION["userId"])){
 	 		echo "<p>You are logged in!</p>";
-	 		require 'main page ambulance.php';
+	 		// require 'main page ambulance.php';
+      header("Location: Data Entering/main page ambulance.php");
 	 	}else{
 	 		echo "<!DOCTYPE html>
 <html>

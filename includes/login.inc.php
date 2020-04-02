@@ -5,6 +5,7 @@ if(isset($_POST["login-submit"])){
 
 	$mailuid=$_POST["mailuid"];
 	$password=$_POST["pwd"];
+	$adminuser=$_POST["adminuser"];
 
 	if (empty($mailuid) || empty($password)) {
 		header("Location: ../header.php?error=emptyfields");
@@ -28,8 +29,13 @@ if(isset($_POST["login-submit"])){
 					session_start();
 					$_SESSION["userId"]=$row["idUsers"];
 					$_SESSION["userUid"]=$row["uidUsers"];
-
-					header("Location: ../header.php?login=success");
+					if($adminuser=="admin"){
+						header("Location: ../Data Entering/Display data.php");
+					}
+					else{
+						header("Location: ../header.php?login=success");
+					}
+					
 					exit();
 				}
 			}else{
