@@ -10,23 +10,31 @@ include_once 'includesdata/dbhdata.inc.php';
 <head>
 	<title>Hospital</title>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<meta charset="utf-8">
 	<style type="text/css">
 		
-
-		html, body {
+		html{
 		  height: absolute;
-		  margin: 10px;
+		  margin: 0;
+		  background-color: rgb(255, 200, 200);		
+		}
+		 body {
+		  height: absolute;
+		  margin: 5px;
 		  background-color: 	rgb(255, 230, 230);
+		  line-height: 26px;
 		}
 
 		div.marginlayout {
+			border-radius: 4px;
 		  border-style: solid;
 		  border-color: rgb(255, 150, 150);;
 		  box-sizing: 10px;
 		}
 
 		div.marginlayout2 {
+			border-radius: 4px;
 		  border-style: solid;
 		  border-color: white;
 		  box-sizing: 10px;
@@ -36,6 +44,7 @@ include_once 'includesdata/dbhdata.inc.php';
 		}
 
 		div.marginlayout3 {
+			border-radius: 4px;
 		  border-style: solid;
 		  border-color: rgb(255, 150, 150);
 		  box-sizing: 10px;
@@ -49,11 +58,15 @@ include_once 'includesdata/dbhdata.inc.php';
 			border-color: black;
 		}
 		.paddinglogout{
-			padding: 0px 0px 0px 1300px;
+			/*padding: 0px 0px 0px 1300px;*/
+			padding-left: 90%;
 		}
-
+		.paddingleft2px{
+			padding-right: 5px;
+		}
 		.fontsize{
-			font-size: 30px;
+			border-radius: 4px;
+			font-size: 22px;
 		}
 		#map {
 		  height: 100%;
@@ -62,8 +75,8 @@ include_once 'includesdata/dbhdata.inc.php';
 
 		div.relative {
 		  position: relative;
-		  width: 96%;
-		  height: 400px;
+		  width: 100%;
+		  height: 450px;
 		  border: 1px solid #ff0000;
 		} 
 
@@ -75,10 +88,11 @@ include_once 'includesdata/dbhdata.inc.php';
 		}
 		div.absolute2 {
 		  position: absolute;
-		  top: 1px;
-		  right: 0;
+		  top: 5px;
+		  right: 2px;
 		  width: 45%;
 		  height: 98%;
+		  border-radius:4px;
 		  border: 3px solid #73AD21;
 		}
 		.fontd{
@@ -95,34 +109,156 @@ include_once 'includesdata/dbhdata.inc.php';
 			border-radius: 4px;
 			background-color: #4CAF50;
 			color:white;
-			padding: 10px 20px;
+			padding: 5px 15px;
 			margin: 8px 0;
 			cursor: pointer;
 			border: none;
-			width: 100%;
+			width:60%;
 			-webkit-transition-duration: 0.4s; /* Safari */
 		  transition-duration: 0.4s;
 		}
 		.button2:hover {
-		  background-color: #4CAF50;
-		  color:white;
+		  background-color: white;
+		  color: #4CAF50;
+		  border: 2px solid #4CAF50;
 		}
 		.button2{
-			font-size: 10px;
+			font-size: 20px;
 			border-radius: 4px;
-			background-color: white;
-			color: #4CAF50;
-			padding: 8px;
+			background-color: rgb(100, 175, 120);
+			color:white;
+			padding: 5px 15px;
+			margin: 8px 0;
 			cursor: pointer;
 			border: none;
-			width: 100%;
 			-webkit-transition-duration: 0.4s; /* Safari */
 		  transition-duration: 0.4s;
+		}
+		ul {
+		  list-style-type: none;
+		  margin: 0px;
+		  padding-left: 5px;
+		  position: sticky;
+		  top: 0;
+		  overflow: hidden;
+		  font-size: 20px;
+		  background-color: rgb(255,100,100);
+		}
+
+		li {
+		  float: left;
+		  border-right:1px solid #bbb;
+		}
+
+		li:last-child {
+		  border-right: none;
+		}
+
+		li a {
+		  display: block;
+		  color: white;
+		  text-align: center;
+		  padding: 14px 30px;
+		  text-decoration: none;
+		}
+
+		li a:hover:not(.active) {
+		  background-color: white;
+		}
+
+		.active {
+		  background-color: rgb(100, 175, 120);
+		}
+
+
+		@media only screen and (max-width: 1150px){
+			.paddinglogout{
+			padding-left: 85%;
+		}
+		body {
+			  font-size: 20px;
+			}
+			.fontsize{
+				font-size:20px;
+			}
+		span{
+			display: none;
+		}
+		}
+		@media only screen and (max-width: 600px){
+			body {
+			  font-size: 15px;
+			}
+			.fontsize{
+				font-size:18px;
+			}
+			.button1{
+				font-size: 15px;
+			border-radius: 4px;
+			background-color: #4CAF50;
+			color:white;
+			padding: 3px 5px;
+			cursor: pointer;
+			border: none;
+			
+			-webkit-transition-duration: 0.4s; /* Safari */
+		  transition-duration: 0.4s;
+			}
+			div.relative {
+		  position: relative;
+		  width: 90%;
+		  height: 400px;
+		  border: 1px solid #ff0000;
+		} 
+			div.absolute1 {
+		  position: absolute;
+		  top: 0px;
+		  width: 90%;
+		  height: 90%;
+		}
+		div.absolute2 {
+		  position: relative;
+		  top:115%;
+		  right: 0%;
+		  width: 100%;
+		  height: 98%;
+		  border: 3px solid #73AD21;
+		}
+		html{
+			border-style: solid;
+		  border-color: rgb(255, 150, 150);
+		  height:220%;
+		}
+		span{
+			display: none;
+		}
+		.dropsome{
+			height: 450px;
+		}
+		.logoutbuttonleft{
+
+		}
+		.paddinglogout{
+			padding-left: 82%;
+		}
+		.font1{
+			font-size: 20px;
+		}
 		}
 
 	</style>
 </head>
 <body>
+	  <div>
+	  	<ul>
+	  	  <li><a class="active" href="#home">Home</a></li>
+	  	  <li><a href="#news">News</a></li>
+	  	  <li><a href="#contact">Contact</a></li>
+	    <form class="paddingleft2px" action="../includes/logout.inc.php" method="post">
+	    <button style="float:right" type="submit" class="button2"name="logout-submit">Log Out</button>
+	  </form>
+	</ul>
+	  </div>
     <?php  // To test the user id is correct or not
     if(isset($_SESSION['userId'])){
 	    //echo $_SESSION['userId'];
@@ -131,21 +267,17 @@ include_once 'includesdata/dbhdata.inc.php';
 	?>
 	<div class="marginlayout3">
 
-		  <div class="paddinglogout">
-		    <form class="" action="../includes/logout.inc.php" method="post">
-		    <button type="submit" class="button2"name="logout-submit">Log Out</button>
-		  </form>
-		  </div>
+		  
 	
 	<div>
-		<div class="font1"><h1 style="background-color:rgb(255, 225, 225);text-align:center; border: 1px solid #73AD21; padding: 10px;
+		<div class="font1"><h1 style="background-color:rgb(255, 225, 225);text-align:center; border: 1px solid #73AD21; padding: 10px;font-size: 30px;border-radius: 4px;
 "><b>Welcome to Prioritor</b></h1>
 
 </div>
 		<div><h2><b></b></h2></div>
 	    
 	</div>
-	<h1 class="fontd">The Patient Details are : &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Location</h1>
+	<h1 class="fontd fontsize"><br>The Patient Details are : <span>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; Location</span></h1>
 	<div>
 		<div>
 	<div class="fontsize marginlayout2 relative"style="background-color:rgb(255, 215, 215);">
@@ -157,7 +289,7 @@ include_once 'includesdata/dbhdata.inc.php';
 		if($resultcheck == 1){
 			while($row=mysqli_fetch_assoc($result)){
 
-				echo "<small>1) Patient Name : </small>"."<strong>".$row['patient_name']."</strong>"."<br>";
+				echo "<br><small>1) Patient Name : </small>"."<strong>".$row['patient_name']."</strong>"."<br>";
 
 				if($row['patient_age']==0){
 					echo "<small>2) Patient Age : </small>"."<strong>"."--"."</strong>"."<br>";
@@ -192,7 +324,7 @@ include_once 'includesdata/dbhdata.inc.php';
 			}
 		}
 	?>
-<hr><div>
+<div>
 	<form action="includesdata/checkeddata.inc.php" method="POST">
 		<center><button class="button1" name="checkedsubmit">Check</button></center>
 	</form>
@@ -201,6 +333,9 @@ include_once 'includesdata/dbhdata.inc.php';
 	<div class="absolute2">
 		<div id="map"></div>
 	</div>
+</div>
+<div class="dropsome">
+	
 </div>
 <div class="fontsize" style="margin: 15px; padding-left: 50px;background-color:rgb(255, 200, 200);">
 	<?php

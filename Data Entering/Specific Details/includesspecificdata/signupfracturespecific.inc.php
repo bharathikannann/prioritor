@@ -38,8 +38,5 @@ session_start();
 
  header("Location: ../Fracture Specific.php?signupspecificdata=success");
 
-}else{
-	echo "Please try again later";
 }
-
 

@@ -79,7 +79,7 @@ include_once 'dbhdata.inc.php';
 
       mysqli_query($conn,$sql1);
 
-      $sql2="INSERT INTO fracturespecific (idu_sersafterlogin,type_open_closed,type_complete_incomplete,area_of_fracture) VALUES ($userId,'NotEntered','NotEntered','NotEntered');";
+      $sql2="INSERT INTO fracturespecific (idusers_afterlogin,type_open_closed,type_complete_incomplete,area_of_fracture) VALUES ($userId,'NotEntered','NotEntered','NotEntered');";
 
       mysqli_query($conn,$sql2);
 

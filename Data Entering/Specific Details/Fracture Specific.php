@@ -80,7 +80,7 @@ session_start();
 </nav><br>
     <div><button class="openbtn" onclick="openNav()">☰ Menu</button></div> 
     <div>
-      <center><h2>Fracture Specific Details</h2></center>
+      <center><h2><strong>Fracture Specific Details</strong></h2></center>
     </div>
     <div>
       <form action="includesspecificdata/signupfracturespecific.inc.php" method="post">
@@ -94,7 +94,7 @@ session_start();
         <input type="radio" name="typecompleteIncomplete" id="incompleteid" for="typeincomplete" value="Incomplete">
         <label for="typeincomplete">Incomplete</label><br><hr>
 
-        <label for="areafracture">Area : </label>
+        <label for="areafracture"><strong>Area : </strong></label>
         <select name="areaoffracture" id="areaid" class="custom-select">
           <option value="Not Selected">--</option>
           <option value="Head">Head</option>

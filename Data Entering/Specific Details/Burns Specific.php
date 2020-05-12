@@ -12,6 +12,23 @@ session_start();
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"></script>
   <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Work+Sans:400,700" rel="stylesheet"> <!-- crimson text regular -->
+  <style>
+  @media only screen and (max-width: 600px) {
+    /*.fontsize{
+      font-size: 18px;
+    }*/
+}
+body{
+line-height: 30px;   
+  }
+  .break {
+            display: block; /* makes it have a width */
+            content: ""; /* clears default height */
+            margin-top: -10px; /* change this to whatever height you want it */
+}
+}
+
+</style>
 
 <title>Main Page</title>
 </head>
@@ -34,7 +51,8 @@ session_start();
     <a href="Fracture Specific.php">Fracture</a>
     <a href="Heart Problem Specific.php">Heart Problem</a>
     <a href="Pregnancy Specific.php">Pregnancy</a>
-    <a href="Head Damage.php">Head Damage</">Burns</a>
+    <a href="Head Damage.php">Head Damage</a>
+    <a href="#">Burns</a>
     <a href="#">Any Others</a>
   </div>
   <a href="Mapspage.html" target="_blank">GPS Tracking</a>
@@ -79,11 +97,11 @@ session_start();
 </nav><br>
     <div><button class="openbtn" onclick="openNav()">☰ Menu</button></div> 
     <div>
-      <center><h2>Burns Specific Details</h2></center>
+      <center><h2><strong>Burns Specific Details</strong></h2></center>
     </div>
     <div>
       <form action="includesspecificdata/signupburnsspecific.inc.php" method="post">
-        <label>Degree of Burn : </label>
+        <label><strong>Degree of Burn :</strong> </label>
         <select name="degreeofburn" class="custom-select" id="DegreeId">
           <option value="Not Selected">--</option>
           <option value="First Degree">First Degree</option>
@@ -92,67 +110,67 @@ session_start();
         </select>
        <hr>
        <label>Body Surface Area Affected by Burn :</label><br>
-       <label>1)Left Arm :(BSA-9%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+       <label><strong>1)Left Arm :(BSA-9%): </strong></label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br class="break">&nbsp;&nbsp;&nbsp;&nbsp;
           Amount Burned : <input type="radio" name="leftarm" value=9>&nbsp;100%&nbsp;
           <input type="radio" name="leftarm" value=6.75>&nbsp;75%&nbsp;
           <input type="radio" name="leftarm" value=4.5>&nbsp;50%&nbsp;
           <input type="radio" name="leftarm" value=2.25>&nbsp;25% &nbsp;
           <input type="radio" name="leftarm" value=0 checked="checked">&nbsp;0% &nbsp;<br>
 
-        <label>2)Right Arm(BSA-9%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           Amount Burned : <input type="radio" name="rightarm" value=9>&nbsp;100%&nbsp;
+        <label><strong>2)Right Arm(BSA-9%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <br class="break">&nbsp;&nbsp;&nbsp;&nbsp;Amount Burned : <input type="radio" name="rightarm" value=9>&nbsp;100%&nbsp;
            <input type="radio" name="rightarm" value=6.75>&nbsp;75%&nbsp;:
            <input type="radio" name="rightarm" value=4.5>&nbsp;50%&nbsp;
            <input type="radio" name="rightarm" value=2.25>&nbsp;25% &nbsp;
            <input type="radio" name="rightarm" value=0 checked="checked">&nbsp;0%<br>
 
-        <label>3) Head(BSA-9%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           Amount Burned : <input type="radio" name="head" value=9>&nbsp;100%&nbsp;
+        <label><strong>3) Head(BSA-9%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <br class="break">&nbsp;&nbsp;&nbsp;&nbsp;Amount Burned : <input type="radio" name="head" value=9>&nbsp;100%&nbsp;
            <input type="radio" name="head" value=6.75>&nbsp;75%&nbsp;
            <input type="radio" name="head" value=4.5>&nbsp;50%&nbsp;
            <input type="radio" name="head" value=2.25>&nbsp;25% &nbsp;
            <input type="radio" name="head" value=0 checked="checked">&nbsp;0%<br>
 
-          <label>4) Chest(BSA-9%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-             Amount Burned : <input type="radio" name="chest" value=9>&nbsp;100%&nbsp;
+          <label><strong>4) Chest(BSA-9%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+             <br class="break">&nbsp;&nbsp;&nbsp;&nbsp; Amount Burned : <input type="radio" name="chest" value=9>&nbsp;100%&nbsp;
              <input type="radio" name="chest" value=6.75>&nbsp;75%&nbsp;
              <input type="radio" name="chest" value=4.5> &nbsp;50%&nbsp;
              <input type="radio" name="chest" value=2.25>&nbsp;25% &nbsp;
              <input type="radio" name="chest" value=0 checked="checked">&nbsp;0%<br>
 
-        <label>5) Abdomen(BSA-9%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-           Amount Burned : <input type="radio" name="abdomen" value=9>&nbsp;100%&nbsp;
+        <label><strong>5) Abdomen(BSA-9%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+           <br class="break">&nbsp;&nbsp;&nbsp;&nbsp;Amount Burned : <input type="radio" name="abdomen" value=9>&nbsp;100%&nbsp;
            <input type="radio" name="abdomen" value=6.75>&nbsp;75%&nbsp;
            <input type="radio" name="abdomen" value=4.5>&nbsp;50%&nbsp;
            <input type="radio" name="abdomen" value=2.25>&nbsp;25% &nbsp;
            <input type="radio" name="abdomen" value=0 checked="checked">&nbsp;0%<br>
        
 
-       <label>6) Back(BSA-18%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Amount Burned : <input type="radio" name="back" value=18>&nbsp;100%&nbsp;
+       <label><strong>6) Back(BSA-18%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br class="break">&nbsp;&nbsp;&nbsp;&nbsp;Amount Burned : <input type="radio" name="back" value=18>&nbsp;100%&nbsp;
           <input type="radio" name="back" value=13.5>&nbsp;75%&nbsp;
           <input type="radio" name="back" value=9>&nbsp;50%&nbsp;
           <input type="radio" name="back" value=4.5>&nbsp;25% &nbsp;
           <input type="radio" name="back" value=0 checked="checked">&nbsp;0%<br>
        
 
-       <label>7)Left Leg(BSA-18%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Amount Burned : <input type="radio" name="leftleg" value=18>&nbsp;100%&nbsp;
+       <label><strong>7)Left Leg(BSA-18%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br class="break">&nbsp;&nbsp;&nbsp;&nbsp;Amount Burned : <input type="radio" name="leftleg" value=18>&nbsp;100%&nbsp;
           <input type="radio" name="leftleg" value=13.5>&nbsp;75%&nbsp;
           <input type="radio" name="leftleg" value=9>&nbsp;50%&nbsp;
           <input type="radio" name="leftleg" value=4.5>&nbsp;25% &nbsp;
            <input type="radio" name="leftleg" value=0 checked="checked">&nbsp;0%<br>
        
 
-       <label>8)Right Leg(BSA-18%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Amount Burned : <input type="radio" name="rightleg" value=18>&nbsp;100%&nbsp;
+       <label><strong>8)Right Leg(BSA-18%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br class="break">&nbsp;&nbsp;&nbsp;&nbsp;Amount Burned : <input type="radio" name="rightleg" value=18>&nbsp;100%&nbsp;
           <input type="radio" name="rightleg" value=13.5>&nbsp;75%&nbsp;
           <input type="radio" name="rightleg" value=9>&nbsp;50%&nbsp;
           <input type="radio" name="rightleg" value=4.5>&nbsp;25%&nbsp;&nbsp;
           <input type="radio" name="rightleg" value=0 checked="checked">&nbsp;0% <br>
 
-       <label>9)Groin :(BSA-1%): </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-          Amount Burned : <input type="radio" name="groin" value=1>&nbsp;100%&nbsp;
+       <label><strong>9)Groin :(BSA-1%):</strong> </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+          <br class="break">&nbsp;&nbsp;&nbsp;&nbsp;Amount Burned : <input type="radio" name="groin" value=1>&nbsp;100%&nbsp;
           <input type="radio" name="groin" value=0.75>&nbsp;75%&nbsp;
           <input type="radio" name="groin" value=0.5>&nbsp;50%&nbsp;
           <input type="radio" name="groin" value=0.25>&nbsp;25% &nbsp;

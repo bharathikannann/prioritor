@@ -76,7 +76,7 @@ session_start();
 </nav><br>
     <div><button class="openbtn" onclick="openNav()">☰ Menu</button></div> 
     <div>
-      <center><h2>Blood Loss Specific Details</h2></center>
+      <center><h2><strong>Blood Loss Specific Details</strong></h2></center>
     </div>
     <div>
       <form action="includesspecificdata/signupbloodlossspecific.inc.php" method="post">

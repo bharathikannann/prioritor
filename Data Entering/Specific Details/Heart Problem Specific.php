@@ -74,7 +74,7 @@ session_start();
 </nav><br>
     <div><button class="openbtn" onclick="openNav()">☰ Menu</button></div> 
     <div>
-      <center><h2>Heart Problem Specific Details</h2></center>
+      <center><h2><strong>Heart Problem Specific Details</strong></h2></center>
     </div>
     <div>
       <form action="/action_page.php">
@@ -96,7 +96,7 @@ session_start();
         <input type="checkbox" name="inheritedheartconditions" value="Inherited Heart Conditions">
         <label>Inherited Heart Conditions</label><br><hr>
 
-        <label>Heart Attack:</label>
+        <label><strong>Heart Attack:</strong></label>
         <select name="HeartAttack" class="custom-select">
           <option value="Major(Compulasary Blocked)">Major(Compulasary Blocked)</option>
           <option value="Minor(Partially Blocked)">Minor(Partially Blocked)</option>

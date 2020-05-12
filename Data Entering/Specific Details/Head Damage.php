@@ -74,7 +74,7 @@ session_start();
 </nav><br>
     <div><button class="openbtn" onclick="openNav()">☰ Menu</button></div> 
     <div>
-      <center><h2>Head Damage Specific Details</h2></center>
+      <center><h2><Strong>Head Damage Specific Details</Strong></h2></center>
     </div>
     <div>
       <form action="includesspecificdata/signupheaddamagespecific.inc.php" method="post">
