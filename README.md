@@ -43,3 +43,11 @@ So that they can be **treated without any delay** at once they reach the hospita
 - **In the Hospital**
   - The Entered Details are displayed in the hospital.
   - *GPS Tracking* is also provided.
+
+## Team Members
+- **`Bharathi Kannan N.`**   [Github](https://github.com/bharathikannan1311/)
+- **`Bala Srinyvas R P.`**
+- **`Akalyaa.`**
+- **`Hamsarohini.`**
+- **`Dhinesh.`**
+- **`Balaji.`**
