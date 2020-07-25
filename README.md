@@ -1,7 +1,5 @@
 # <img src="https://github.com/bharathikannan1311/Prioritor_Demo/blob/master/Images/Prioritor-Logo.png?raw=true" alt="drawing" width="35"/>  `Prioritor`
 
-__**This is a demo website for our product. Back end servises are not added.**__ 
-
 ## Live Demo Website
 - `Prioritor` [click here](https://prioritordemo.herokuapp.com/)
 
