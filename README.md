@@ -1,4 +1,4 @@
--# <img src="https://github.com/bharathikannan1311/Prioritor_Demo/blob/master/Images/Prioritor-Logo.png?raw=true" alt="drawing" width="35"/>  `Prioritor`
+<img src="https://github.com/bharathikannan1311/Prioritor_Demo/blob/master/Images/Prioritor-Logo.png?raw=true" alt="drawing" width="35"/>  `Prioritor`
 
 ## Live Demo Website
 - `Prioritor` [click here](https://prioritordemo.herokuapp.com/)
