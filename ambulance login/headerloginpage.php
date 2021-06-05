@@ -1,14 +1,14 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Login</title>
-  <link rel="stylesheet" type="text/css" href="assets/css/headerlogin-style.css">
+  <title>Ambulance Login </title>
+  <link rel="stylesheet" type="text/css" href="assets/headerlogin-style.css">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
   <div class="log-form">
-  <h2>PRIORITOR - ACCOUNT LOGIN</h2>
+  <h2>PRIORITOR - AMBULANCE LOGIN</h2>
   <?php
 			if (isset($_GET["error"])) {
 		if ($_GET["error"]=="selectusertype") {
@@ -24,12 +24,8 @@
     <input type="checkbox" onclick="showpasswordfunction()"><label class="passwordlabel">Show Password</label>
     <br><br>
     <button type="submit" class="btn" name="login-submit">Login</button>
-
-    <a class="forgot" href="signup.php"><span class="newuser">New user :</span>Sign Up</a>
   </form>
-  <div>
-  <a class="ambulanceredirect" href="ambulance login/index.php"><span class="newuser">Ambulance side : </span>Login</a>
-  </div>
+  <a class="ambulanceredirect" href="../index.php"><span class="newuser">Return : </span>Back</a>
 </div><!--end log form -->
 <script type="text/javascript">
         function showpasswordfunction() {
@@ -42,6 +38,6 @@
         }
 
     </script>
-    <script src="assets/js/sidebar.js"></script>
+    <script src="../assets/js/sidebar.js"></script>
 </body>
 </html>

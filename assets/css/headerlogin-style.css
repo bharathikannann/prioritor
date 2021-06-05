@@ -1,0 +1,180 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  font-family: 'open sans', helvetica, arial, sans;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  background-image: linear-gradient(315deg, #ffac81 0%, #ff928b 74%) !important;
+}
+
+.log-form {
+  width: 50%;
+  min-width: 320px;
+  max-width: 575px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  box-shadow: 0 0 11px rgba(33,33,33,.1);
+  border-radius: 10px;
+}
+@media (max-width: 40em) {
+  .log-form {
+    width: 95%;
+    position: relative;
+    margin: 10% auto 10% auto;
+    left: 0%;
+    -webkit-transform: translate(0%, 0%);
+    -moz-transform: translate(0%, 0%);
+    -o-transform: translate(0%, 0%);
+    -ms-transform: translate(0%, 0%);
+    transform: translate(0%, 0%);
+  }
+}
+.log-form form {
+  display: block;
+  width: 100%;
+  padding: 2em;
+  padding-bottom: 3em;
+}
+.log-form h2 {
+  color: #ffffff;
+  font-family: 'open sans condensed';
+  font-size: 1.35em;
+  display: block;
+  background: rgba(0,0,0,60%);
+  width: 100%;
+  text-transform: uppercase;
+  padding: 0.75em 1em 0.75em 1.5em;
+  box-shadow: inset 0px 1px 1px rgba(255, 255, 255, 0.05);
+  border: 1px #1d1d1d;
+  margin: 0;
+  font-weight: 200;
+  border-top-left-radius:10px;
+  border-top-right-radius:10px;
+}
+.log-form .input {
+  display: block;
+  margin: auto auto;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em 0;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.25em;
+  color: #757575;
+}
+.log-form .input:focus {
+  outline: none;
+}
+.log-form .inputcheckbox {
+  display: block;
+  width: 100%;
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+  padding: 0.5em 0;
+  border: none;
+  border-bottom: 1px solid #eaeaea;
+  padding-bottom: 1.25em;
+  color: #757575;
+}
+.log-form .inputcheckbox:focus {
+  outline: none;
+}
+.select{
+  width: 100%;
+  padding: 12px 20px;
+  margin: 20px 0 10px 0;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+.log-form .btn {
+  transition: 0.5s;
+  border-radius: 5px;
+  background-color: #4CAF50;
+  color: white;
+  border: 2px solid #4CAF50;
+  display: inline-block;
+  padding: 0.5em 2em;
+  margin-right: 0.5em;
+  box-shadow: inset 0px 1px 0px rgba(255, 255, 255, 0.2);
+}
+.log-form .btn:hover {
+  background-color: white;
+  color: #4CAF50;
+}
+.log-form .btn:active {
+  background: #1fb5bf;
+  box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.1);
+}
+.log-form .btn:focus {
+  outline: none;
+}
+.log-form .forgot {
+  color: #33d3de;
+  line-height: 0.5em;
+  position: relative;
+  top: 2.5em;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.log-form .forgot:hover {
+  color: #1ba0a9;
+}
+.newuser{
+  color: grey;
+}
+.opacity{
+  opacity: 60%;
+}
+.passwordlabel{
+  margin-left: 5px;
+}
+option{
+  padding: 10px;
+  height: 100px;
+}
+
+@import url("https://fonts.googleapis.com/css?family=Nunito+Sans");
+:root {
+  --blue: #0e0620;
+  --white: #fff;
+  --green: #2ccf6d;
+}
+.redcolor{
+	color: red;
+}
+.log-form .ambulanceredirect{
+  color: #33d3de;
+  line-height: 0.5em;
+  position: relative;
+  top: 2.5em;
+  text-decoration: none;
+  font-size: 1em;
+  margin: 0;
+  padding: 0;
+  float: right;
+}
+.log-form .ambulanceredirect {
+  color: #0400ff;
+  line-height: 0.5em;
+  position: relative;
+  top: 2.5em;
+  text-decoration: none;
+  font-size: 1.1em;
+  margin: 0;
+  margin-right: 10px;
+  float: right;
+}

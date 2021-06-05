@@ -10,6 +10,24 @@ if (isset($_POST["signup-submit"]))
     $password = $_POST["pwd"];
     $passwordRepeat = $_POST["pwd-repeat"];
 
+    $n=10; 
+    function getName($n) { 
+        $characters = '0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'; 
+        $randomString = ''; 
+    
+        for ($i = 0; $i < $n; $i++) { 
+            $index = rand(0, strlen($characters) - 1); 
+            $randomString .= $characters[$index]; 
+        } 
+    
+        return $randomString; 
+    } 
+
+    $randomstring = getName($n);
+    $nouser = 1;
+    $ambulancePasswordcreated = "NotEntered";
+    $ambulanceUsernamecreated = $nouser.$username.$randomstring;
+
     if (empty($username) || empty($email) || empty($password) || empty($passwordRepeat))
     {
         header("Location: ../signup.php?error=emptyfields&uid=" . $username . "&email=" . $email);
@@ -57,7 +75,8 @@ if (isset($_POST["signup-submit"]))
             }
             else
             {
-                $sql = "INSERT INTO users (uidUsers,emailUsers,pwdUsers) VALUES (?,?,?)";
+
+                $sql = "INSERT INTO users (uidUsers,emailUsers,pwdUsers,ambulanceUsername,ambulancePassword) VALUES (?,?,?,?,?)";
                 $stmt = mysqli_stmt_init($conn);
                 if (!mysqli_stmt_prepare($stmt, $sql))
                 {
@@ -68,7 +87,7 @@ if (isset($_POST["signup-submit"]))
                 {
                     $hashedPwd = password_hash($password, PASSWORD_DEFAULT);
 
-                    mysqli_stmt_bind_param($stmt, "sss", $username, $email, $hashedPwd);
+                    mysqli_stmt_bind_param($stmt, "sssss", $username, $email, $hashedPwd, $ambulanceUsernamecreated, $ambulancePasswordcreated);
                     mysqli_stmt_execute($stmt);
                     header("Location: ../index.php?signup=success");
                     exit();

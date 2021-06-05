@@ -6,13 +6,13 @@ session_start();
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../assets/bootstrap.min.css">
-    <link rel="stylesheet" href="../assets/navbar.css">
-    <link rel="stylesheet" type="text/css" href="assets/stylespecific.css">
+    <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/stylespecific.css">
     <title>Main Page</title>
 </head>
 
-<body class="mx-5 my-2">
+<body class="my-2">
     <?php  // To test the user id is correct or not
       if(isset($_SESSION['userId'])){
         //echo $_SESSION['userId'];
@@ -58,7 +58,7 @@ session_start();
             </ul>
         </div>
         <div>
-            <button class="openbtn" onclick="openNav()">☰ Menu</button>
+            <button class="p-2 mb-2" onclick="openNav()">☰ Menu</button>
         </div>
         <div>
             <center>
@@ -133,7 +133,7 @@ session_start();
         }
 
     </script>
-    <script src="assets/navbar.js"></script>
+    <script src="../assets/js/navbar.js"></script>
 </body>
 
 </html>

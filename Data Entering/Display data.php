@@ -1,7 +1,5 @@
 <?php 
-session_start();
-?>
-<?php 
+session_start(); 
 include_once 'includesdata/dbhdata.inc.php';
 ?>
 
@@ -11,21 +9,31 @@ include_once 'includesdata/dbhdata.inc.php';
 <head>
 	<title>Hospital</title>
 	<meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 	<meta charset="utf-8">
-	<link rel="stylesheet" href="assets/hospital-style.css">
-	<link rel="stylesheet" href="assets/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/hospital-style.css">
+	<link rel="stylesheet" href="assets/css/navbar-displaydata.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	
 </head>
 
-<body class="m-2">
-	<div>
-	  	<ul>
-	  	  	<li><a class="active navstyle" href="#home">Home</a></li>
-	  	  	<li><a class="navstyle" href="#news">News</a></li>
-	  	  	<li><a class="navstyle" href="#contact">Contact</a></li>
-	    <form class="paddingleft2px" action="../includes/logout.inc.php" method="post">
-	    	<button style="float:right" type="submit" class="button2"name="logout-submit">Log Out</button>
-	  	</form>
+<body class="m-2 zoom">
+	
+	<!-- Custom Navbar -->
+	<div class="navbar-custom">
+		<span class="navbar-toggle-custom m-2" id="js-navbar-toggle-custom">☰</span>
+		<a href="#" class="logo-custom">Prioritor</a>
+		<ul class="main-nav-custom mt-2" id="js-menu-custom">
+			<li class="mt-3">
+				<a href="hospitalsubpages/createambulanceuser.php" class="nav-links-custom">Ambulance Management</a>
+			</li>
+			<li  class="mt-3 mr-4 ml-2">
+				<a href="hospitalsubpages/chatbot.php" class="nav-links-custom">Chatbot Details</a>
+			</li>
+			<li>
+				<form class="logoutbtn" action="../includes/logout.inc.php" method="post">
+					<button type="submit" name="logout-submit" class="button2">Log Out</button>
+				</form>
+			</li>
 		</ul>
 	</div>
 
@@ -37,15 +45,12 @@ include_once 'includesdata/dbhdata.inc.php';
     }
 	?>
 
-	<div class="marginlayout3">	
-		<div>
-			<div class="font1"><h1 class="welcome ml-4 mr-4"><b>Welcome to Prioritor</b></h1>
-	</div>
+	<center><h2 class="fontd">Hospital side</h2></center>
 
 	<div class="row p-4">
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
 			<div class="card zoom hover-pointer" style="border-radius:10px;">
-				<div class="card-body fontsize w-100 h=100">
+				<div class="card-body fontsize w-100 h=100 pl-4 mb-4">
 					<h1 class="fontd fontsize"><br>The Patient Details are :</h1>
 					<?php
 						$sql="SELECT * FROM data WHERE idusers_afterlogin='".$userId."' ORDER BY patient_id DESC LIMIT 1;";
@@ -89,7 +94,7 @@ include_once 'includesdata/dbhdata.inc.php';
 			</div>
 		</div>
 		<!-- Map -->
-		<div class="col-12 col-sm-6 col-md-6 col-lg-6 col-xl-6 mb-4">
+		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 mb-4">
 			<div id="map" class="z-depth-1-half map-container zoom" style="max-height: 500px">
 				<iframe src="https://maps.google.com/maps?q=manhatan&t=&z=13&ie=UTF8&iwloc=&output=embed" frameborder="0" style="border:0" allowfullscreen></iframe>
 			</div>
@@ -112,8 +117,8 @@ include_once 'includesdata/dbhdata.inc.php';
 						if($resultcheck >0){
 							while($row=mysqli_fetch_assoc($result)){
 								$flag=0;
+								echo "<center><strong>Burns</strong></center><hr>";
 								if($row['degreeofburn']!="NotEntered"){
-									echo "<center><strong>Burns</strong></center><hr>";
 									$flag=1;
 									echo "<small> Degree Of Burn : </small>"."<strong>".$row['degreeofburn']."</strong>"."<br>";
 								}
@@ -134,7 +139,7 @@ include_once 'includesdata/dbhdata.inc.php';
 		</div>
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
 			<div class="card shadowhover hover-pointer mb-4 w-100 h-100"> 
-				<div class="card-body fontsize">
+				<div class="card-body fontsize p-4">
 					<?php
 						$sql="SELECT * FROM bloodlossspecific 
 						WHERE idusers_afterlogin='".$userId."' 
@@ -145,8 +150,8 @@ include_once 'includesdata/dbhdata.inc.php';
 						if($resultcheck >0){
 							while($row=mysqli_fetch_assoc($result)){
 								$flag=0;
+								echo "<center><strong>Blood Loss</strong></center><hr>";
 								if($row['bleeding_class']!="NotEntered"){
-									echo "<center><strong>Blood Loss</strong></center><hr>";
 									$flag=1;
 									echo "<small> Class of Bleeding : </small>"."<strong>".$row['bleeding_class']."</strong>"."<br>";
 								}
@@ -168,7 +173,7 @@ include_once 'includesdata/dbhdata.inc.php';
 		
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
 			<div class="card shadowhover hover-pointer mb-4 w-100 h-100"> 
-				<div class="card-body fontsize">
+				<div class="card-body fontsize p-4">
 					<?php
 						$sql="SELECT * FROM fracturespecific 
 						WHERE idusers_afterlogin='".$userId."' 
@@ -178,9 +183,9 @@ include_once 'includesdata/dbhdata.inc.php';
 						$resultcheck=mysqli_num_rows($result);
 						if($resultcheck >0){
 							while($row=mysqli_fetch_assoc($result)){
-								if($row['type_open_closed']!="NotEntered" || $row['type_complete_incomplete']!="NotEntered" || $row['area_of_fracture']!='NotEntered'){
+								
 									echo "<center><strong>Fracture</strong></center><hr>";					
-								} 
+								
 								if($row['type_open_closed']!="NotEntered"){
 									echo "<small> Closed/Open : </small>"."<strong>".$row['type_open_closed']."</strong>"."<br>";
 								}
@@ -202,7 +207,7 @@ include_once 'includesdata/dbhdata.inc.php';
 
 		<div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-4 mb-4">
 			<div class="card shadowhover hover-pointer mb-4 w-100 h-100"> 
-				<div class="card-body fontsize">
+				<div class="card-body fontsize p-4">
 					<?php
 						$sql="SELECT * FROM headdamagespecific 
 						WHERE idusers_afterlogin='".$userId."' 
@@ -278,6 +283,6 @@ include_once 'includesdata/dbhdata.inc.php';
 	<script async defer
 	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCfrASzVHSOzBlevA_eKtQ4mY9XZ7Qf6EE&callback=initMap">
 	</script>
-
+    <script src="assets/js/navbar.js"></script>
 </body>
 </html>

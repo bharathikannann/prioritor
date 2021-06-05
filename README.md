@@ -56,7 +56,5 @@ So that they can be **treated without any delay** when they reach the hospital.
 ## Team Members
 - **`Bharathi Kannan N.`**   [Github](https://github.com/bharathikannan1311/)
 - **`Bala Srinyvas R P.`**
-- **`Akalyaa.`**
-- **`Hamsarohini.`**
-- **`Dhinesh.`**
-- **`Balaji.`**
+- **`Abinaya M`**
+- **`Dharani SR`**

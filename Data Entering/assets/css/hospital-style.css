@@ -1,0 +1,163 @@
+html {
+	height: absolute;
+	margin: 0;
+	background-color: rgb(250, 239, 239);
+}
+
+body {
+	height: absolute;
+	margin: 5px;
+	line-height: 26px;
+}
+
+.fontsize {
+	border-radius: 4px;
+	font-size: 22px;
+}
+
+#map {
+	height: 100%;
+	width: 100%;
+}
+
+.mapstyle {
+	max-height: 300px;
+}
+
+.map-container {
+	overflow: hidden;
+	padding-bottom: 56.25%;
+	position: relative;
+	height: 0;
+}
+
+.map-container iframe {
+	left: 0;
+	top: 0;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.fontd {
+	font-size: 26px;
+}
+
+.button1:hover {
+	background-color: white;
+	color: #4CAF50;
+	border: 2px solid #4CAF50;
+}
+
+.button1 {
+	font-size: 20px;
+	border-radius: 4px;
+	background-color: #4CAF50;
+	color: white;
+	padding: 5px 15px;
+	margin: 8px 0;
+	cursor: pointer;
+	border: 2px solid #4CAF50;
+	width: 60%;
+	-webkit-transition-duration: 0.4s;
+ /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button2 {
+	background-color: white;
+	color: #4CAF50;
+	border: 2px solid #4CAF50;
+	font-size: 20px;
+	border-radius: 4px;
+	padding: 5px 15px;
+	margin: 8px 0;
+	cursor: pointer;
+	-webkit-transition-duration: 0.4s;
+ /* Safari */
+	transition-duration: 0.4s;
+}
+
+.button2:hover {
+	background-color: rgb(100, 175, 120);
+	color: white;
+	border: 2px solid #4CAF50;
+
+}
+
+
+@media only screen and (max-width: 1150px) {
+	.paddinglogout {
+		padding-left: 85%;
+	}
+
+	body {
+		font-size: 20px;
+	}
+
+	.fontsize {
+		font-size: 20px;
+	}
+}
+
+@media only screen and (max-width: 600px) {
+	body {
+		font-size: 15px;
+	}
+
+	.fontsize {
+		font-size: 18px;
+	}
+
+	.button1 {
+		font-size: 15px;
+		border-radius: 4px;
+		background-color: #4CAF50;
+		color: white;
+		padding: 3px 5px;
+		cursor: pointer;
+		border: none;
+		-webkit-transition-duration: 0.4s;
+ /* Safari */
+		transition-duration: 0.4s;
+	}
+
+	.paddinglogout {
+		padding-left: 82%;
+	}
+
+	.font1 {
+		font-size: 20px;
+	}
+}
+
+.shadowhover {
+	transition: box-shadow .3s;
+	float: left;
+	background: #fff;
+	border-radius: 10px;
+}
+
+.shadowhover:hover {
+	box-shadow: 0 0 11px rgba(33,33,33,.1);
+}
+
+.hover-pointer {
+	cursor: pointer;
+}
+
+.zoom {
+	box-shadow: 0 0 11px rgba(33,33,33,.1);
+	border-radius: 10px;
+}
+
+.navstyle {
+	color: blue;
+}
+
+.welcome {
+	text-align: center;
+	padding: 10px;
+	font-size: 30px;
+	border-radius: 4px;
+}

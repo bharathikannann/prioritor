@@ -6,19 +6,22 @@ session_start();
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="assets/ambulance-style.css">
-    <link rel="stylesheet" type="text/css" href="assets/navbar.css">
-    <link rel="stylesheet" type="text/css" href="assets/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/ambulance-style.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/navbar.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/bootstrap.min.css">
     <title>Main Ambulance Page</title>
     <style>
         body {
             background-color: #ffebcd;
         }
-
+        .width{
+            width:100%;
+            border:grey;
+        }
     </style>
 </head>
 
-<body class="mx-5 my-2">
+<body class="my-2">
     <div>
         <!-- Testing -->
         <!-- <?php  // To test the user id is correct or not
@@ -64,7 +67,7 @@ session_start();
             </ul>
         </div>
         <div>
-            <button class="openbtn" onclick="openNav()">☰ Menu</button>
+            <button class="p-2 mb-2" onclick="openNav()">☰ Menu</button>
         </div>
         <div>
             <center>
@@ -158,13 +161,30 @@ session_start();
                     <label><strong>Any Others</strong></label>
                     <input type="text" name="anyotherproblems" placeholder="Any other Problems...." class="form-control">
 
+                    <!-- <label for="bloodpressure" class="mt-2"><strong>Choose Hospital</strong></label>
+                <select id="bloodpressureid" name="bloodpressure" class="custom-select">
+                    <option value="Notselected">Own Hospital</option>
+                    <option value="low">Hospital A</option>
+                    <option value="Normal">Hospital B</option>
+                    <option value="Prehypertension">Hospital C</option>
+                </select><br>
+                <button type="button" class="btn width mt-2">Find Hospital near me</button> -->
+
                 </div>
                 <input type="submit" value="Submit" name="submit">
             </form>
         </div>
     </div>
-    <script src=assets/ambulance-mainpage.js></script>
-    <script src="assets/navbar.js"></script>
+    <script src=assets/js/ambulance-mainpage.js></script>
+    <script src="assets/js/navbar.js"></script>
+    <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+    <df-messenger
+        intent="WELCOME"
+        chat-title="Prioritor"
+        agent-id="7a1a0efb-f012-414b-bf5f-0e0aec255971"
+        language-code="en"
+        chat-icon="assets/images/chatbotlogo.png"
+    ></df-messenger>
 </body>
 
 </html>
