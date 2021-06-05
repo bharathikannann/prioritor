@@ -52,9 +52,3 @@ So that they can be **treated without any delay** when they reach the hospital.
 - **In the Hospital**
   - The Entered Details are displayed in the hospital.
   - *GPS Tracking* is also provided.
-  
-## Team Members
-- **`Bharathi Kannan N.`**   [Github](https://github.com/bharathikannan1311/)
-- **`Bala Srinyvas R P.`**
-- **`Abinaya M`**
-- **`Dharani SR`**
