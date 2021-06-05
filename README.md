@@ -71,4 +71,3 @@ So that they can be **treated without any delay** when they reach the hospital.
 - **In the Hospital**
   - The Entered Details are displayed in the hospital.<br>
     <br><img src="assets/images/hospital-side.PNG" alt="drawing" width=500/>
-  - _GPS Tracking_ is also provided.
