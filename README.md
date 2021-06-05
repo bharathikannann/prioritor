@@ -3,6 +3,7 @@
 ## Live Demo Website
 
 - `Prioritor` [click here](https://prioritordemo.herokuapp.com/)
+- Backend is not enabled here. Instead download it to the local computer and import the [dataentering.sql](dataentering.sql) in phpmyadmin.
 
 ## Problem Statement:
 
