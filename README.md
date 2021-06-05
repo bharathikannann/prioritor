@@ -1,17 +1,17 @@
 <img src="assets/images/logo.png" alt="drawing" width="35"/> `Prioritor`
 
-## `Live Demo Website`
+## Live Demo Website
 
 - `Prioritor` [click here](https://prioritordemo.herokuapp.com/)
 
-## `Problem Statement:`
+## Problem Statement:
 
 The purpose of an effective Emergency medical system is to provide _timely medical care to prevent death or disability_.
 Delays in arrival to the Emergency Department (ED), and in receiving treatment can lead to **severe negative outcomes and poor prognosis**.
 When we look at delay in treatment, one of the biggest contribution factors that comes to mind is the **breakdown in communication**.
 Delays in getting care can lead to: _Increased emotional distress, Increased complications, Higher treatment costs and Increased hospitalizations_
 
-## `Our Solution:`
+## Our Solution:
 
 There is a **golden hour** between life and death.
 The golden hour is the period of time following a traumatic injury.
@@ -21,12 +21,12 @@ The main aim of our product is to **utilize the golden hour of the patient by in
 This helps them to know completely about the condition of the patient and helps them in _arranging the emergency room and other facilities_ before the arrival of the patient.
 So that they can be **treated without any delay** when they reach the hospital.
 
-## `Video Explanation`
+## Video Explanation
 
 - `Technical video` [click here](https://youtu.be/MLfC4G1-AOU)
 - `Business video` [click here](https://youtu.be/v9zFJvoWgDI)
 
-## `Technologies Used`
+## Technologies Used
 
 - `PHP`
   - Procedural Programming
@@ -42,20 +42,20 @@ So that they can be **treated without any delay** when they reach the hospital.
 - `API's`
   - Google Maps API for location.
 
-## `User Hierarchy`
+## User Hierarchy
 
 - Our user hierarchy comprises 4 categories of people<br>
-  <br><img src="assets/images/user-hierarchy.jpg" alt="drawing" width =300/>
+  <br><img src="assets/images/user-hierarchy.jpg" alt="drawing" width =400/>
 
 - Each category of people has seperate roles and each are explained in the below diagram.<br>
-  <br><img src="assets/images/user-roles.jpg" alt="drawing" width =400/>
+  <br><img src="assets/images/user-roles.jpg" alt="drawing" width =500/>
 
-## `How it works`
+## How it works
 
 - **In the Ambulance**
 
   - The paramedic will enter the basic details of the patient.<br>
-    <br><img src="assets/images/ambulance-side.PNG" alt="drawing" width =300/>
+    <br><img src="assets/images/ambulance-side.PNG" alt="drawing" width =400/>
 
   Then the specific Details of the patient can also be entered like
 
@@ -65,9 +65,9 @@ So that they can be **treated without any delay** when they reach the hospital.
   - _Pregnancy Details_
   - _Heart Problem Details_
   - _Head Damage Details_<br>
-    <br><img src="assets/images/details-collected.jpg" alt="drawing" width =300/>
+    <br><img src="assets/images/details-collected.jpg" alt="drawing" width =400/>
 
 - **In the Hospital**
   - The Entered Details are displayed in the hospital.<br>
-    <br><img src="assets/images/hospital-side.PNG" alt="drawing" width=300/>
+    <br><img src="assets/images/hospital-side.PNG" alt="drawing" width=400/>
   - _GPS Tracking_ is also provided.
