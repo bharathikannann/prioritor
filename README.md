@@ -45,7 +45,7 @@ So that they can be **treated without any delay** when they reach the hospital.
 ## User Hierarchy
 
 - Our user hierarchy comprises 4 categories of people<br>
-  <br><img src="assets/images/user-hierarchy.jpg" alt="drawing" width =400/>
+  <br><img src="assets/images/user-hierarchy.jpg" alt="drawing" width =500/>
 
 - Each category of people has seperate roles and each are explained in the below diagram.<br>
   <br><img src="assets/images/user-roles.jpg" alt="drawing" width =500/>
@@ -55,7 +55,7 @@ So that they can be **treated without any delay** when they reach the hospital.
 - **In the Ambulance**
 
   - The paramedic will enter the basic details of the patient.<br>
-    <br><img src="assets/images/ambulance-side.PNG" alt="drawing" width =400/>
+    <br><img src="assets/images/ambulance-side.PNG" alt="drawing" width =500/>
 
   Then the specific Details of the patient can also be entered like
 
@@ -65,9 +65,9 @@ So that they can be **treated without any delay** when they reach the hospital.
   - _Pregnancy Details_
   - _Heart Problem Details_
   - _Head Damage Details_<br>
-    <br><img src="assets/images/details-collected.jpg" alt="drawing" width =400/>
+    <br><img src="assets/images/details-collected.jpg" alt="drawing" width =500/>
 
 - **In the Hospital**
   - The Entered Details are displayed in the hospital.<br>
-    <br><img src="assets/images/hospital-side.PNG" alt="drawing" width=400/>
+    <br><img src="assets/images/hospital-side.PNG" alt="drawing" width=500/>
   - _GPS Tracking_ is also provided.
